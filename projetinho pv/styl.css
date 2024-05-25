@@ -1,0 +1,148 @@
+/* Cores personalizadas */
+:root {
+  --color1: #ff5252; /* Vermelho */
+  --color2: #ffa726; /* Laranja */
+  --color3: #ffd95b; /* Amarelo */
+  --color4: #69f0ae; /* Verde claro */
+  --color5: #4fc3f7; /* Azul claro */
+  --color6: #b39ddb; /* Lilás */
+  --color7: #ff8a65; /* Vermelho claro */
+  --color8: #64b5f6; /* Azul */
+  --color9: #aed581; /* Verde */
+  --color10: #e0e0e0; /* Cinza */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--color1);
+  transition: background-color 0.5s ease-in-out;
+  overflow: hidden;
+  animation: bgAnimation 15s infinite;
+}
+
+@keyframes bgAnimation {
+  0%, 100% { background-position: 0 0; }
+  50% { background-position: 100% 100%; }
+}
+
+.container {
+  text-align: center;
+}
+
+.phrase-box {
+  border: 2px solid pink;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: pink;
+  display: inline-block;
+  position: relative; /* Necessário para posicionamento do pseudo-elemento */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#phraseDisplay {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+#changeButton {
+  margin-bottom: 20px;
+  background-color: pink;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+#changeButton:hover {
+  transform: scale(1.1);
+  animation: colorChange 10s infinite;
+}
+
+@keyframes colorChange {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+
+/* ... (estilos existentes) ... */
+
+.container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border: 5px solid #ff80b3; /* rosa */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Corações nas bordas */
+  .container::before,
+  .container::after {
+    content: "♥";
+    position: absolute;
+    color: #ff80b3; /* rosa */
+    font-size: 40px;
+  }
+  
+  /* Corações ao redor */
+  .container::before {
+    top: -25px;
+    left: -25px;
+  }
+  .container::after {
+    top: -25px;
+    right: -25px;
+  }
+  .container::before:nth-of-type(2),
+  .container::after:nth-of-type(2),
+
+  .container::after:nth-of-type(20) {
+    content: "♥";
+    color: #ff80b3; /* rosa */
+    font-size: 25px;
+    position: absolute;
+  }
+  
+  .container::before:nth-of-type(2) {
+    top: -25px;
+    left: calc(50% - 100px);
+  }
+  .container::after:nth-of-type(2) {
+    top: -25px;
+    right: calc(50% - 100px);
+  }
+  
+  /* ... (os outros corações posicionados ao redor do container) ... */
+  
+  ]
+  /* ... (estilos existentes) ... */
+
+/* Corações ao redor */
+.container::before,
+.container::after,
+.container::before:nth-of-type(2),
+.container::after:nth-of-type(2),
+/* ... (os outros corações) ... */
+{
+  /* ... (estilos existentes) ... */
+  animation: heartAnimation 5s linear infinite; /* Adicionando a animação */
+}
+
+/* Animação de rotação */
+@keyframes heartAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
