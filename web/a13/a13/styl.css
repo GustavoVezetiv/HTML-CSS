@@ -1,0 +1,94 @@
+.inicio h1{
+    right: 100px;
+}
+
+.section {
+    background-image: url(projeto-alucar/img/capa.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.conteiner-cabecalho{
+    background-color: rgba(0, 0, 0, 0.404);
+
+}
+
+.cabecalho{
+    text-align: end;
+    color: rgb(255, 255, 255);
+
+}
+
+.sobre{
+    max-width: 1024px;
+    margin: auto;
+
+}
+
+.osP p {
+    border-left: 1px solid  ;
+    padding-left: 5px ;
+    
+
+}
+
+
+.contt{
+    background-color: red;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contt h1{
+    color: white;
+    background-color: rgb(105, 11, 11);
+    
+   
+  
+}
+
+.conteiner-analise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.analise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    line-height: 30px;
+
+}
+
+    
+.but {
+    display: flex;   
+    align-items: center; 
+    justify-content: center; 
+
+}
+.but button{
+    background-color: red; 
+    border: none; 
+    padding: 5px;
+    display: flex;   
+    align-items: center; 
+    justify-content: center; 
+    width: 29%;     
+}
+
+.footer{
+    display: flex;   
+    align-items: center; 
+    justify-content: center; 
+    color: red;
+    padding: 20px;
+
+}

@@ -1,0 +1,270 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor00: #afbecc;
+    --cor01: #95a4b2;
+    --cor02: #7C898B;
+    --cor03: #636564;
+    --cor04: #212121;
+    --cor05: #1C0B19;
+
+    --fonte-titulo: 'Martian Mono';
+    --fonte-padrao: 'Ubuntu';
+}
+
+body {
+    background-color: var(--cor04);
+    font-family: var(--fonte-padrao);
+}
+
+
+
+main {
+    max-width: 950px;
+    background-color: var(--cor03);
+    margin: auto;
+    padding: 20px 0px;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow:  6px 6px 8px rgba(94, 94, 94, 0.3), -6px -6px 8px rgba(94, 94, 94, 0.3);
+}
+
+/* ------------- PORTIFOLIO ----------------*/
+
+.proj_passado {
+    background-color: var(--cor01);
+    max-width: 750px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+.proj_passado h2 {
+    font-size: 1.8em;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.proj_passado h3 {
+    text-shadow: 2px 5px 10px rgba(255, 255, 255, 0.8);
+}
+
+.proj {
+    
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 10px auto;
+    color: #202020;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.proj div {
+    max-width: 400px;
+    margin: 0px 15px;
+}
+
+.proj img {
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+/* --------------- IDEALIZADORES --------------*/
+
+#idealizadores {
+    background-color: var(--cor01);
+    max-width: 900px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow:  5px 5px 12px rgba(0, 0, 0, 0.250),
+             -5px -5px 12px hsla(0, 0%, 2%, 0.2);
+}
+
+#idealizadores h2 {
+    font-size: 1.8em;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+#idealizadores h3 {
+    font-family:  var(--fonte-titulo);
+    padding: 30px;
+    text-align: center;
+    
+}
+
+.ideal {
+    color: var(--cor05);
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.ideal article {
+    text-align: justify ;
+    max-width: 250px;
+    max-height: 100%;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.4s;
+
+}
+
+.ideal article:hover {
+    transition: 0.4s;
+    padding: 10px 30px;
+    background-color: #e4f1ff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #6e0e6e45;
+}
+
+.ideal article h3 {
+    font-size: 1.1em;
+    max-width: 300px;
+    text-shadow: 2px 5px 12px #b5fff8b0;
+    font-family: var(--fonte-titulo);
+}
+
+.ideal article p {
+    padding: 0px 10px;
+}
+
+
+.ideal article ul {
+    max-height: 50px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ideal article ul img {
+    transition: 0.5s;
+    width: 25px;
+    border-radius: 0%;
+}
+
+.ideal article ul img:hover {
+    transition: 0.2s;
+    width: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #8200fc99;
+    box-shadow: 0px 0px 20px #8200fc99;
+}
+
+.ideal img {
+    max-width: 120px;
+    border-radius: 50%;
+}
+
+
+
+
+/* ---------------------- CONTATOS -------------*/
+
+#contato {
+    background-color: var(--cor01);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 2px 2px 5px #ffffff1f, -2px -2px 5px #ffffff1f;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 0.5s;
+}
+
+#contato:hover {
+    max-width: 610px;
+    transition: 0.5s;
+    box-shadow: 8px 8px 0px #fff, -8px -8px 0px #fff;
+}
+
+#contato h1 {
+    font-family: var(--fonte-titulo);
+    
+}
+
+.ilusion {
+    padding: 5px;
+    display: flex;
+    max-width: 250px;
+    align-items: center;
+}
+
+.ilusion img {
+    max-width: 80px;
+    margin-right: 10px;
+}
+
+.ilusion h1 {
+    font-size: 1.2em;
+}
+
+.ilusion p {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #6e0e6e;
+}
+
+.links {
+    font-size: 0.7em;
+    max-width: 200px;
+    padding: 5px;
+}
+
+.links nav {
+    display: flex;
+    justify-content: end;
+    padding: 2px;
+}
+
+
+.links img {
+    margin: 10px;
+    max-width: 25px;
+    padding: 3px;
+}
+
+.links img:hover {
+    transition: 0.2s;
+    border-radius: 5px;
+    background-color: #b5fff8;
+    box-shadow: 0px 0px 10px #b5fff8;
+}
+
+/* ----------- RODAPÉ ------*/
+
+.rodape {
+   background-color: var(--cor01);
+   text-align: center;
+   font-weight: 500;
+   padding: 10px;
+}

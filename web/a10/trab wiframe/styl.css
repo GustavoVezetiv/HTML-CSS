@@ -1,0 +1,67 @@
+.card {
+    box-sizing: border-box;
+    width: 900px;
+    height: 400px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    background-color: rgb(55, 55, 56);
+    flex-direction: row;
+  } 
+  
+  .card:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  
+  .card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+
+.central {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 650px;
+
+}
+
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+body {
+    background-color: rgb(12, 29, 45);
+
+}
+
+.titulo p {
+    padding-left: 70px;
+
+}
+
+
+.titulo h1 {
+    padding-left: 70px;
+
+}
+
